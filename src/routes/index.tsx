@@ -197,7 +197,7 @@ function CTA({
   return (
     <a
       href={CHECKOUT_URL}
-      onClick={() => { (window as any).fbq?.("trackCustom", "ClicouComprar"); }}
+      onClick={() => { const fbq = (window as any).fbq; fbq?.("trackCustom", "ClicouComprar"); fbq?.("track", "InitiateCheckout", { content_name: "E-book Comandos Elétricos", currency: "BRL", value: 47 }); }}
       className={`btn-cta hover:btn-cta-hover ${
         size === "lg" ? "px-8 py-4 text-base sm:text-lg" : "px-5 py-3 text-sm"
       } ${className}`}
