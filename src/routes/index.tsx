@@ -197,7 +197,7 @@ function CTA({
   return (
     <a
       href={CHECKOUT_URL}
-      onClick={() => { if (location.hostname === "lp.livrocomandoseletricos.com.br") (window as any).fbq?.("trackCustom", "ClicouComprar"); }}
+      onClick={() => { (window as any).fbq?.("trackCustom", "ClicouComprar"); }}
       className={`btn-cta hover:btn-cta-hover ${
         size === "lg" ? "px-8 py-4 text-base sm:text-lg" : "px-5 py-3 text-sm"
       } ${className}`}
