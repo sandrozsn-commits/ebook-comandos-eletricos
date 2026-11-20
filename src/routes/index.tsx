@@ -290,7 +290,7 @@ function Index() {
   <div className="mb-4">
     <span className="text-lg text-ink-foreground/60">De <span className="line-through">R$ 97,00</span> por apenas:</span>
     <div className="flex items-baseline gap-3">
-      <span className="text-4xl font-extrabold text-accent">R$ 47,00</span>
+      <span className="text-4xl font-extrabold text-promo-bg">R$ 47,00</span>
       <span className="text-sm font-medium text-ink-foreground/70">ou em até 12x R$ 4,83</span>
     </div>
      </div>
@@ -634,7 +634,7 @@ function Index() {
             </p>
             <p className="mt-2 text-sm text-muted-foreground">De <span className="line-through">R$ 97,00</span> por apenas:</p>
             <div className="mt-1 flex flex-col">
-              <span className="font-display text-5xl font-extrabold text-foreground">R$ 47,00</span>
+              <span className="font-display text-5xl font-extrabold text-promo-bg">R$ 47,00</span>
               <span className="mt-1 text-sm text-muted-foreground">em até 12x R$ 4,83</span>
               <span className="mt-1 text-sm font-semibold text-promo-accent">50% OFF</span>
             </div>
@@ -762,7 +762,7 @@ function Index() {
           </p>
           <div className="mt-8 flex flex-col items-center">
             <span className="text-lg text-ink-foreground/60 line-through">De R$ 97,00</span>
-            <span className="mt-1 font-display text-6xl font-extrabold text-accent">R$ 47,00</span>
+            <span className="mt-1 font-display text-6xl font-extrabold text-promo-bg">R$ 47,00</span>
             <span className="mt-2 text-sm font-semibold text-promo-accent">Oferta com 50% OFF</span>
           </div>
           <div className="mt-8 flex flex-col items-center">
