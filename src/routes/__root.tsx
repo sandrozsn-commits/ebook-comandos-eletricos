@@ -132,7 +132,18 @@ function RootShell({ children }: { children: ReactNode }) {
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '1323130454222421');
-                fbq('track', 'PageView');
+                /* Evento no navegador + servidor (API de Conversões) com o mesmo event_id para deduplicação */
+                window.__metaTrack=function(name,custom,data){
+                  var id=Date.now().toString(36)+Math.random().toString(36).slice(2,10);
+                  fbq(custom?'trackCustom':'track',name,data||{},{eventID:id});
+                  try{
+                    var c=function(k){var m=document.cookie.match(new RegExp('(?:^|; )'+k+'=([^;]*)'));return m?decodeURIComponent(m[1]):undefined};
+                    var body=JSON.stringify({event_name:name,event_id:id,event_source_url:location.href,fbp:c('_fbp'),fbc:c('_fbc'),custom_data:data||{}});
+                    if(navigator.sendBeacon){navigator.sendBeacon('/api/capi',new Blob([body],{type:'application/json'}))}
+                    else{fetch('/api/capi',{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true})}
+                  }catch(e){}
+                };
+                window.__metaTrack('PageView',false);
               }
             `,
           }}
