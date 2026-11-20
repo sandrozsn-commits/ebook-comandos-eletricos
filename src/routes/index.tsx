@@ -636,7 +636,7 @@ function Index() {
             <div className="mt-1 flex flex-col">
               <span className="font-display text-5xl font-extrabold text-foreground">R$ 47,00</span>
               <span className="mt-1 text-sm text-muted-foreground">em até 12x R$ 4,83</span>
-              <span className="mt-1 text-sm font-semibold text-red-600">50% OFF</span>
+              <span className="mt-1 text-sm font-semibold text-promo-accent">50% OFF</span>
             </div>
 
             <div className="mt-6 space-y-4">
@@ -763,7 +763,7 @@ function Index() {
           <div className="mt-8 flex flex-col items-center">
             <span className="text-lg text-ink-foreground/60 line-through">De R$ 97,00</span>
             <span className="mt-1 font-display text-6xl font-extrabold text-accent">R$ 47,00</span>
-            <span className="mt-2 text-sm font-semibold text-red-600">Oferta com 50% OFF</span>
+            <span className="mt-2 text-sm font-semibold text-promo-accent">Oferta com 50% OFF</span>
           </div>
           <div className="mt-8 flex flex-col items-center">
             <CTA>QUERO MEU E-BOOK + BÔNUS</CTA>
@@ -797,7 +797,7 @@ function Index() {
         <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3">
           <div className="min-w-0">
             <p className="truncate text-sm font-bold text-accent">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
-            <p className="truncate text-xs font-bold text-red-600">
+            <p className="truncate text-xs font-bold text-promo-accent">
               Oferta com 50% OFF
             </p>
           </div>
