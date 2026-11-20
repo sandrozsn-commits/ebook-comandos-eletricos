@@ -290,7 +290,7 @@ function Index() {
 
             <div className="mt-8">
   <div className="mb-4">
-    <span className="text-lg text-ink-foreground/60">De R$ 97,00 por apenas:</span>
+    <span className="text-lg text-ink-foreground/60">De <span className="line-through">R$ 97,00</span> por apenas:</span>
     <div className="flex items-baseline gap-3">
       <span className="text-4xl font-extrabold text-accent">R$ 47,00</span>
       <span className="text-sm font-medium text-ink-foreground/70">ou em até 12x R$ 4,83</span>
@@ -413,7 +413,7 @@ function Index() {
         <div className="max-w-2xl">
           <SectionTag>O que está dentro do Guia</SectionTag>
           <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
-            Tudo que um comando elétrico exige — reunido em um só material.
+            Tudo que um comando elétrico exige, reunido em um só material.
           </h2>
         </div>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -437,7 +437,7 @@ function Index() {
           <div className="max-w-2xl">
             <SectionTag>Depois do guia prático</SectionTag>
             <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
-              O que você vai ser capaz de fazer na próxima segunda-feira.
+              O que você vai ser capaz de fazer quando baixar o seu Guia Prático:
             </h2>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -462,7 +462,7 @@ function Index() {
         <div className="max-w-2xl">
           <SectionTag>A diferença na prática</SectionTag>
           <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
-            Por que este material é diferente do que você já tentou.
+            Por que este material é diferente do que você já tentou?
           </h2>
         </div>
 
@@ -549,7 +549,7 @@ function Index() {
         <div className="max-w-2xl">
           <SectionTag>Bônus para acelerar</SectionTag>
           <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
-            3 BÔNUS EXCLUSIVOS PARA ACELERAR SEU APRENDIZADO
+            3 Bônus exclusivos para acelerar o seu aprendizado
           </h2>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
@@ -634,7 +634,7 @@ function Index() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               Hoje você leva tudo por
             </p>
-            <p className="mt-2 text-sm text-muted-foreground line-through">De R$ 97,00 por apenas:</p>
+            <p className="mt-2 text-sm text-muted-foreground">De <span className="line-through">R$ 97,00</span> por apenas:</p>
             <div className="mt-1 flex flex-col">
               <span className="font-display text-5xl font-extrabold text-foreground">R$ 47,00</span>
               <span className="mt-1 text-sm text-muted-foreground">em até 12x R$ 4,83</span>
@@ -798,7 +798,7 @@ function Index() {
       >
         <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3">
           <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-accent">De R$ 97,00 por apenas R$ 47,00</p>
+            <p className="truncate text-sm font-bold text-accent">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
             <p className="truncate text-xs text-muted-foreground">
               Oferta com 50% OFF
             </p>
