@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 
-const CHECKOUT_URL = "https://payfast.greenn.com.br/205065?ch_id=143853&b_id_1=199064&b_offer_1=SLiGph&b_id_2=199111&b_offer_2=vH6z46";
+const CHECKOUT_URL = "https://payfast.greenn.com.br/205065?ch_id=145440&b_id_1=199064&b_offer_1=SLiGph&b_id_2=199111&b_offer_2=vH6z46";
 
 export const Route = createFileRoute("/")({
   head: () => ({
