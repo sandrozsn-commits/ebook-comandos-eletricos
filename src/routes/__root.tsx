@@ -118,11 +118,11 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
 
-        {/* Meta Pixel Code — dispara somente em lp.livrocomandoseletricos.com.br */}
+        {/* Meta Pixel Code — dispara em qualquer domínio, exceto preview do Lovable e localhost */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              if(location.hostname==='lp.livrocomandoseletricos.com.br'){
+              if(!/(^localhost$|\\.lovable\\.app$|\\.lovableproject\\.com$|\\.lovable\\.dev$)/.test(location.hostname)){
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
