@@ -147,8 +147,6 @@ const internalPhotos = [
   { src: "/assets/livro-p111.jpg", alt: "Chaves Limites — Chaves Fim de Curso" },
   { src: "/assets/livro-p121.jpg", alt: "Simbologias — Instrumentos de Medição" },
   { src: "/assets/livro-p126.jpg", alt: "Simbologias — Dispositivos de Comando e Proteção" },
-  { src: "/assets/livro-p148.jpg", alt: "Diagramas — Chave de Partida Sequencial de Motores" },
-  { src: "/assets/livro-p212.jpg", alt: "Chave Estrela-Triângulo Automática com Reversão" },
   { src: "/assets/livro-p224.jpg", alt: "Chave Compensadora Automática com Reversão" },
 ];
 
@@ -644,7 +642,7 @@ function Index() {
             <div className="mt-6 space-y-4">
               <CTA className="w-full">QUERO MEU E-BOOK + BÔNUS</CTA>
               <div className="text-center">
-                <p className="text-[13px] font-bold text-accent mb-1">OFERTA POR TEMPO LIMITADO</p>
+                <p className="text-[13px] font-bold text-red-600 mb-1">OFERTA POR TEMPO LIMITADO</p>
                 <p className="text-[11px] font-medium text-muted-foreground">Acesso Imediato. Garanta o seu agora!</p>
               </div>
             </div>
@@ -799,7 +797,7 @@ function Index() {
         <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3">
           <div className="min-w-0">
             <p className="truncate text-sm font-bold text-accent">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
-            <p className="truncate text-xs text-muted-foreground">
+            <p className="truncate text-xs font-bold text-red-600">
               Oferta com 50% OFF
             </p>
           </div>
