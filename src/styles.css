@@ -25,6 +25,8 @@
   --color-ink-soft: var(--ink-soft);
   --color-ink-foreground: var(--ink-foreground);
   --color-success: var(--success);
+  --color-promo-bg: var(--promo-bg);
+  --color-promo-accent: var(--promo-accent);
   --radius-sm: calc(var(--radius) - 4px);
 
   --radius-md: calc(var(--radius) - 2px);
@@ -93,6 +95,8 @@
   --ink-soft: oklch(0.965 0.008 252);
   --ink-foreground: oklch(0.22 0.04 262);
   --success: oklch(0.62 0.14 155);
+  --promo-bg: oklch(0.145 0.01 265);
+  --promo-accent: oklch(0.72 0.19 55);
   --gradient-ink: linear-gradient(160deg, oklch(0.995 0.002 250), oklch(0.968 0.008 252));
   --gradient-cta: linear-gradient(100deg, oklch(0.63 0.19 258), oklch(0.52 0.2 268));
   --shadow-soft: 0 1px 2px oklch(0.2 0.05 262 / 5%), 0 10px 28px -18px oklch(0.2 0.05 262 / 14%);
@@ -147,6 +151,8 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --promo-bg: oklch(0.145 0.01 265);
+  --promo-accent: oklch(0.72 0.19 55);
 }
 
 @layer base {

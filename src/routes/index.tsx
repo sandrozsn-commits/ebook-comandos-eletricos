@@ -266,7 +266,7 @@ function Index() {
   return (
     <main className="bg-background text-foreground">
       {/* ----------------------------- ACESSO IMEDIATO BAR ---------------------- */}
-      <div className="fixed inset-x-0 top-0 z-50 bg-red-600 py-2.5 text-center text-sm font-bold text-white">
+      <div className="fixed inset-x-0 top-0 z-50 bg-promo-bg py-2.5 text-center text-sm font-bold text-promo-accent">
         OFERTA DE BLACK FRIDAY COM 50% OFF
       </div>
 
