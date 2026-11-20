@@ -642,7 +642,7 @@ function Index() {
             <div className="mt-6 space-y-4">
               <CTA className="w-full">QUERO MEU E-BOOK + BÔNUS</CTA>
               <div className="text-center">
-                <p className="text-[13px] font-bold text-red-600 mb-1">OFERTA POR TEMPO LIMITADO</p>
+                <p className="text-[13px] font-bold text-promo-accent mb-1">OFERTA POR TEMPO LIMITADO</p>
                 <p className="text-[11px] font-medium text-muted-foreground">Acesso Imediato. Garanta o seu agora!</p>
               </div>
             </div>
