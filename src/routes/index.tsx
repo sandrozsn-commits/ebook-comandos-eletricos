@@ -796,7 +796,7 @@ function Index() {
       >
         <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3">
           <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-accent">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
+            <p className="truncate text-sm font-bold text-promo-bg">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
             <p className="truncate text-xs font-bold text-promo-accent">
               Oferta com 50% OFF
             </p>
