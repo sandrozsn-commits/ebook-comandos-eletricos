@@ -150,6 +150,182 @@ const internalPhotos = [
   { src: "/assets/livro-p224.jpg", alt: "Chave Compensadora Automática com Reversão" },
 ];
 
+type SumarioCapitulo = { n: string; title: string; items: [string, string][] };
+
+const sumario: SumarioCapitulo[] = [
+  {
+    n: "I",
+    title: "Redes e Ramais",
+    items: [
+      ["1.1 Características das Redes Trifásicas", "09"],
+      ["1.2 Tipos de redes e ramais trifásicos", "10"],
+      ["1.3 Condições de Funcionamento das Redes e Ramais Trifásicos", "11"],
+      ["1.4 Análise de Defeitos", "11"],
+      ["1.5 Dimensionamento", "16"],
+      ["1.6 Tabelas", "18"],
+    ],
+  },
+  {
+    n: "II",
+    title: "Sistemas e Dispositivos de Proteção",
+    items: [
+      ["2.1 Aterramento", "21"],
+      ["2.1.1 Conceitos importantes", "22"],
+      ["2.1.2 Esquemas de Aterramento", "23"],
+      ["2.1.3 Dispositivo Diferencial Residual", "26"],
+      ["2.1.4 Características dos DRs", "27"],
+      ["2.1.5 Tipos de ligações", "26"],
+      ["2.1.6 Esquemas de ligação", "28"],
+      ["2.2 DPS", "30"],
+      ["2.2.1 O raio", "30"],
+      ["2.2.2 DPS", "30"],
+      ["2.2.3 Funcionamento do DPS", "31"],
+      ["2.2.4 Classes dos DPS", "32"],
+      ["2.2.5 Especificações", "32"],
+      ["2.2.6 Tipos de ligação", "34"],
+      ["2.2.7 Instalação", "35"],
+      ["2.3 Fusíveis", "36"],
+      ["2.3.1 Classificação dos fusíveis", "37"],
+      ["2.3.2 Características dos fusíveis", "38"],
+      ["2.3.3 Funcionamento", "39"],
+      ["2.3.4 Análise de defeitos", "39"],
+      ["2.3.5 Identificação de defeitos", "40"],
+      ["2.3.6 Correção de defeitos", "41"],
+      ["2.3.7 Dimensionamento", "42"],
+      ["2.4 Disjuntor Termomagnético", "44"],
+      ["2.4.1 Funcionamento", "44"],
+      ["2.4.2 Curvas de disparo", "45"],
+      ["2.4.3 Características", "46"],
+      ["2.4.4 Dimensionamento", "48"],
+      ["2.5 Disjuntor Motor", "49"],
+    ],
+  },
+  {
+    n: "III",
+    title: "Motores Elétricos",
+    items: [
+      ["3.1 Motores Monofásicos", "51"],
+      ["3.1.1 Motor Universal", "51"],
+      ["3.1.2 Motor de Campo Distorcido", "52"],
+      ["3.1.3 Motor de Repulsão", "54"],
+      ["3.1.4 Motor de Fase Auxiliar", "55"],
+      ["3.1.5 Polarização de Motor de Fase Auxiliar", "60"],
+      ["3.2 Motores Trifásicos", "64"],
+      ["3.2.1 Motor de Rotor Bobinado", "64"],
+      ["3.2.2 Motor de Indução trifásico", "65"],
+      ["3.2.2.1 Ligações e Fechamentos", "65"],
+      ["3.2.2.2 Características", "68"],
+      ["3.2.3 Motor Dahlander", "74"],
+      ["3.2.3.1 Funcionamento", "74"],
+      ["3.2.3.2 Tipos de ligações", "75"],
+      ["3.2.3.3 Identificação", "76"],
+      ["3.2.4 Análise de Defeitos", "77"],
+      ["3.3 Motor de Corrente Contínua", "81"],
+      ["3.3.1 Motor Série", "82"],
+      ["3.3.2 Motor Paralelo (Shunt)", "82"],
+      ["3.3.3 Motor Misto (Compound)", "83"],
+    ],
+  },
+  {
+    n: "IV",
+    title: "Transformadores",
+    items: [
+      ["4.1 Transformadores Abaixadores", "86"],
+      ["4.2 Transformadores Elevadores", "86"],
+      ["4.3 Transformadores Isoladores", "86"],
+      ["4.4 Associação de Transformadores Monofásicos", "87"],
+      ["4.5 Transformador para circuitos de comandos", "88"],
+      ["4.6 Transformador de Corrente – TC", "88"],
+      ["4.7 Transformador de Potencial – TP", "89"],
+      ["4.8 Autotransformador", "90"],
+    ],
+  },
+  {
+    n: "V",
+    title: "Dispositivos de Comandos Elétricos",
+    items: [
+      ["5.1 Contatores", "91"],
+      ["5.1.1 Funcionamento", "93"],
+      ["5.1.2 Características", "94"],
+      ["5.1.3 Dimensionamento", "96"],
+      ["5.2 Relé Térmico", "98"],
+      ["5.2.1 Funcionamento", "98"],
+      ["5.2.2 Ligação", "99"],
+      ["5.2.3 Dimensionamento", "100"],
+      ["5.2.4 Regulagem", "101"],
+      ["5.3 Botões de Comandos", "103"],
+      ["5.3.1 Tipos", "103"],
+      ["5.3.2 Características", "104"],
+      ["5.3.3 Funcionamento", "105"],
+      ["5.4 Sinalizadores", "106"],
+      ["5.4.1 Sinalização sonora", "106"],
+      ["5.4.2 Sinalização visual", "106"],
+      ["5.5 Relé Temporizador", "107"],
+      ["5.5.1 Modelos", "107"],
+      ["5.5.2 Tipos", "107"],
+      ["5.5.2.1 Funcionamento", "108"],
+      ["5.5.3 Teste de Funcionamento", "108"],
+      ["5.6 Relé Falta de Fase", "110"],
+      ["5.6.1 Funcionamento", "110"],
+      ["5.7 Relé Sequência de Fase", "110"],
+      ["5.7.1 Funcionamento", "110"],
+      ["5.8 Chaves Fim de Curso", "111"],
+      ["5.8.1 Funcionamento", "111"],
+      ["5.8.2 Característica", "112"],
+    ],
+  },
+  {
+    n: "VI",
+    title: "Simbologias",
+    items: [
+      ["6.1 Siglas", "113"],
+      ["6.2 Simbologias Literais", "115"],
+      ["6.3 Simbologias das Grandezas Elétricas Fundamentais", "116"],
+      ["6.4 Simbologias de uso geral", "117"],
+      ["6.5 Simbologias dos Componentes dos circuitos", "118"],
+      ["6.6 Simbologias dos dispositivos de sinalização visual e sonora", "120"],
+      ["6.7 Simbologias dos instrumentos de medidas", "121"],
+      ["6.8 Simbologias das bobinas e relés de comandos", "122"],
+      ["6.9 Simbologias dos contatos e peças", "124"],
+      ["6.10 Simbologias dos elementos de comandos", "125"],
+      ["6.11 Simbologias dos dispositivos de comandos e de proteção", "126"],
+      ["6.12 Simbologias dos motores e geradores", "127"],
+      ["6.13 Simbologias dos transformadores", "128"],
+      ["6.14 Simbologias dos dispositivos de partidas", "129"],
+    ],
+  },
+  {
+    n: "VII",
+    title: "Diagramas e Chaves de Partidas",
+    items: [
+      ["7.1 Chave de Partida Simples", "130"],
+      ["7.2 Chave de Partida Simples com Disjuntor", "134"],
+      ["7.3 Chave de Partida Simples com Sinalização", "136"],
+      ["7.4 Chave de Partida Simples com Relé Sequência de Fase", "141"],
+      ["7.5 Chave de Partida Simples com Relé Falta de Fase", "142"],
+      ["7.6 Chave de Partida Simples com Relés Falta e Sequência de Fase", "143"],
+      ["7.7 Chave de Partida Simples com Comando à Distância", "145"],
+      ["7.8 Chave de Partida Sequencial de motores", "150"],
+      ["7.9 Chave de Partida Sequencial de motores com proteção individual", "155"],
+      ["7.10 Chave de Partida Sequencial automática de motores com proteção individual", "162"],
+      ["7.11 Chave de Reversão Semi-Automática", "169"],
+      ["7.12 Chave de Reversão Semi-Automática com Bloqueio de Contatos e Botões", "177"],
+      ["7.13 Chave de Reversão com Bloqueio de Contatos e Botões com Sinalização", "183"],
+      ["7.14 Chave de Reversão para Motor Monofásico de 6 terminais/127v", "191"],
+      ["7.15 Chave de Reversão para Motor Monofásico de 6 terminais/220v", "196"],
+      ["7.16 Chave Estrela-Triângulo Automática", "201"],
+      ["7.17 Chave Estrela-Triângulo Automática com Contator Auxiliar", "207"],
+      ["7.18 Chave Estrela-Triângulo Automática com Reversão", "213"],
+      ["7.19 Chave Compensadora Automática", "220"],
+      ["7.20 Chave Compensadora Automática com Reversão", "225"],
+      ["7.21 Motor Dahlander com Comutação de Velocidade por Botões", "233"],
+      ["7.22 Motor Dahlander com Comutação de Velocidade e Reversão por Botões", "239"],
+      ["7.23 Chave para Motor Trifásico de Rotor Bobinado", "249"],
+      ["7.24 Chave para Motor Trifásico de Rotor Bobinado com Reversão", "256"],
+    ],
+  },
+];
+
 const faqs = [
   {
     q: "O e-book é em PDF?",
@@ -219,6 +395,7 @@ function SectionTag({ children }: { children: React.ReactNode }) {
 function Index() {
   const [showBar, setShowBar] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [openCap, setOpenCap] = useState<number | null>(0);
   const [count, setCount] = useState(0);
   const [hasStartedCount, setHasStartedCount] = useState(false);
 
@@ -539,6 +716,63 @@ function Index() {
               />
             </div>
           ))}
+        </div>
+
+        {/* ------------------------------ SUMÁRIO --------------------------- */}
+        <div className="mx-auto mt-16 max-w-4xl px-5">
+          <div className="text-center">
+            <SectionTag>Sumário</SectionTag>
+            <h3 className="mt-5 text-2xl font-bold sm:text-3xl">Conheça o Sumário Completo</h3>
+            <p className="mt-3 text-muted-foreground">
+              7 capítulos, 268 páginas — do aterramento às chaves de partida. Toque em um capítulo
+              para ver o conteúdo e a página.
+            </p>
+          </div>
+
+          <div className="mt-8 space-y-3 text-left">
+            {sumario.map((c, i) => {
+              const open = openCap === i;
+              return (
+                <div key={c.n} className="overflow-hidden rounded-2xl border border-border bg-card">
+                  <button
+                    type="button"
+                    onClick={() => setOpenCap(open ? null : i)}
+                    aria-expanded={open}
+                    className="flex w-full items-center gap-4 px-5 py-4 text-left transition-colors hover:bg-secondary/70"
+                  >
+                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-accent/10 text-sm font-bold text-accent">
+                      {c.n}
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[0.68rem] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+                        Capítulo {c.n}
+                      </span>
+                      <span className="block truncate text-[0.98rem] font-bold">{c.title}</span>
+                    </span>
+                    <span className="hidden shrink-0 text-xs font-semibold text-muted-foreground sm:block">
+                      {c.items.length} itens
+                    </span>
+                    <ChevronDown
+                      className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {open && (
+                    <ul className="border-t border-border px-5 py-3">
+                      {c.items.map(([t, p]) => (
+                        <li key={t} className="flex items-baseline gap-2 py-1.5 text-[0.92rem]">
+                          <span className="min-w-0">{t}</span>
+                          <span className="min-w-6 flex-1 border-b border-dotted border-border" />
+                          <span className="shrink-0 font-semibold tabular-nums text-muted-foreground">
+                            {p}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
