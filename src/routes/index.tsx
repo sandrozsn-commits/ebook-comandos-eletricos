@@ -131,12 +131,13 @@ const bonuses = [
   },
 ];
 
-const realSocialProof = [
-  { src: "/assets/livro-depoimentos-fb.webp",    w: 528, h: 785, alt: "Depoimentos de alunos no Facebook — livro digital Comandos Elétricos" },
-  { src: "/assets/livro-depoimento-ailton.webp", w: 800, h: 320, alt: "Depoimento de Ailton Júnior — livro digital Comandos Elétricos" },
-  { src: "/assets/livro-depoimento-bene.png",    w: 800, h: 200, alt: "Depoimento de Bene Frota — livro digital Comandos Elétricos" },
-  { src: "/assets/livro-depoimento-fabio.png",   w: 800, h: 280, alt: "Depoimento de Fabio Pinheiro da Silva — livro digital Comandos Elétricos" },
-  { src: "/assets/livro-depoimento-rodrigo.png", w: 800, h: 380, alt: "Depoimento de Rodrigo Eckert — livro digital Comandos Elétricos" },
+const testimonials = [
+  { name: "Ailton Júnior", text: "Muito bom o material e conteúdo, um dos mais completo que já adquirir. Estão de parabéns, era tudo o que eu precisava em um material só." },
+  { name: "Bene Frota", text: "Livro digital muito bom, ótimo. Comprei com promoção, mandei imprimir e encadernar, ficou excelente. Comprem, vale a pena. Bem atualizado." },
+  { name: "Fabio Pinheiro da Silva", text: "Excelente livro, estou satisfeito e atualizando meus conhecimentos." },
+  { name: "Geraldo Celio Pinto", text: "E-book de grande importância para ser consultado no dia a dia de qualquer eletricista que quer se destacar diante de seus clientes, parabéns." },
+  { name: "Itamar Brito", text: "Material excelente. Muito didático. Parabéns e obrigado." },
+  { name: "Gelson Rocha", text: "Muito boa didática, bem explicado, de fácil entendimento. Meus agradecimentos e muito sucesso em seus projetos." },
 ];
 
 const internalPhotos = [
@@ -449,35 +450,30 @@ function Index() {
 
       {/* ------------------------------- HERO ------------------------------- */}
       <section className="bg-ink-gradient relative mt-10 overflow-hidden text-ink-foreground">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.1fr_1fr] lg:py-24">
-          <div className="animate-rise">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-5 py-8 lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:py-24">
+          <div className="animate-rise order-2 lg:order-1">
             <SectionTag>
               <span className="text-accent">•</span> E-book + Bônus
             </SectionTag>
-            <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-[2.8rem]">
-              Aprenda a Fazer Ligações, Regulagens, Dimensionamentos e Correção de Defeitos em Comandos
-              Elétricos.
+            <h1 className="mt-4 text-[1.7rem] font-extrabold leading-[1.1] sm:text-4xl lg:mt-6 lg:text-[2.8rem] lg:leading-[1.05]">
+              Aprenda a Ligar, Regular, Dimensionar e Corrigir Defeitos em Comandos Elétricos.
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-ink-foreground/75">
-              O Guia Completo e Definitivo, usado por eletricistas, técnicos e estudantes que querem
-              dominar painéis, motores e diagramas de Comandos Elétricos.
-            </p>
 
-            <div className="mt-8">
-  <div className="mb-4">
-    <span className="text-lg text-ink-foreground/60">De <span className="line-through">R$ 97,00</span> por apenas:</span>
-    <div className="flex items-baseline gap-3">
-      <span className="text-4xl font-extrabold text-promo-bg">R$ 47,00</span>
-      <span className="text-sm font-medium text-ink-foreground/70">ou em até 12x R$ 4,83</span>
-    </div>
-     </div>
-              
+            <div className="mt-5 lg:mt-8">
+              <div className="mb-4">
+                <span className="text-base text-ink-foreground/60 lg:text-lg">De <span className="line-through">R$ 97,00</span> por apenas:</span>
+                <div className="flex flex-wrap items-baseline gap-x-3">
+                  <span className="text-4xl font-extrabold text-promo-bg">R$ 47,00</span>
+                  <span className="text-sm font-medium text-ink-foreground/70">ou em até 12x R$ 4,83</span>
+                </div>
+              </div>
+
               <div className="flex flex-col gap-3">
                 <CTA className="w-full sm:w-fit">QUERO MEU E-BOOK + BÔNUS</CTA>
               </div>
             </div>
 
-            <ul className="mt-10 flex flex-wrap gap-3">
+            <ul className="mt-5 flex flex-wrap gap-2 lg:mt-8 lg:gap-3">
               {seals.map((s) => (
                 <li
                   key={s.label}
@@ -488,15 +484,21 @@ function Index() {
                 </li>
               ))}
             </ul>
+
+            <p className="mt-6 max-w-xl text-base text-ink-foreground/75 lg:text-lg">
+              O Guia Completo e Definitivo, usado por eletricistas, técnicos e estudantes que querem
+              dominar painéis, motores e diagramas de Comandos Elétricos.
+            </p>
           </div>
 
-          <div className="animate-rise flex justify-center">
+          <div className="animate-rise order-1 flex justify-center lg:order-2">
             <img
               src={"/assets/livro-capa-3d.png"}
               alt="Livro Comandos Elétricos - O Seu Guia Prático e Definitivo, 2ª edição, de Sandro Zander Soares Nogueira"
               width={600}
               height={600}
-              className="w-full max-w-sm rounded-2xl shadow-[var(--shadow-lift)]"
+              fetchPriority="high"
+              className="w-full max-w-[13rem] rounded-2xl shadow-[var(--shadow-lift)] sm:max-w-xs lg:max-w-sm"
             />
           </div>
         </div>
@@ -815,22 +817,27 @@ function Index() {
             </h2>
           </div>
 
-          <div className="mt-12 mx-auto max-w-4xl columns-1 sm:columns-2 gap-6">
-            {realSocialProof.map((img, i) => (
-              <div
-                key={i}
-                className="break-inside-avoid mb-6 overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  width={img.w}
-                  height={img.h}
-                  className="h-auto w-full"
-                />
-              </div>
+          <div className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((t) => (
+              <figure key={t.name} className="surface-card flex flex-col p-5">
+                <blockquote className="flex-1 text-[0.98rem] leading-relaxed text-foreground/85">
+                  “{t.text}”
+                </blockquote>
+                <figcaption className="mt-4 flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent/15 text-sm font-bold text-accent">
+                    {t.name.charAt(0)}
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block truncate text-sm font-bold">{t.name}</span>
+                    <span className="block text-xs text-muted-foreground">Comentário real no Facebook</span>
+                  </span>
+                </figcaption>
+              </figure>
             ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <CTA className="w-full sm:w-fit">QUERO MEU E-BOOK + BÔNUS</CTA>
           </div>
         </div>
       </section>
@@ -1028,14 +1035,14 @@ function Index() {
           showBar ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3">
-          <div className="min-w-0">
-            <p className="truncate text-sm font-bold text-promo-bg">De <span className="line-through">R$ 97,00</span> por apenas R$ 47,00</p>
-            <p className="truncate text-xs font-bold text-promo-accent">
-              Oferta com 50% OFF
+        <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:gap-4 sm:px-5">
+          <div className="min-w-0 leading-tight">
+            <p className="text-sm font-bold text-promo-bg">
+              <span className="text-xs font-medium line-through opacity-70">R$ 97</span> R$ 47,00
             </p>
+            <p className="text-[11px] font-bold text-promo-accent sm:text-xs">50% OFF · Garantia de 7 dias</p>
           </div>
-          <CTA size="sm">QUERO MEU E-BOOK</CTA>
+          <CTA size="sm" className="whitespace-nowrap">COMPRAR AGORA</CTA>
         </div>
       </div>
     </main>
